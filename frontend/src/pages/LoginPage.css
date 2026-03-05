@@ -1,0 +1,237 @@
+/* ── Root ── */
+.lp-root {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 60%, #1e3a5f 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+/* ── Card ── */
+.lp-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 2.5rem 2rem;
+  width: 100%;
+  max-width: 440px;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.3);
+}
+
+/* ── Logo ── */
+.lp-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.75rem;
+}
+
+.lp-logo-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: #1e293b;
+  color: #6ee7b7;
+  font-size: 1.1rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lp-logo-text {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #1e293b;
+  letter-spacing: -0.5px;
+}
+
+/* ── Headings ── */
+.lp-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0 0 0.3rem;
+}
+
+.lp-subtitle {
+  font-size: 0.9rem;
+  color: #64748b;
+  margin: 0 0 1.75rem;
+}
+
+/* ── Role Selector ── */
+.lp-role-selector {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  margin-bottom: 1.75rem;
+}
+
+.lp-role-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  padding: 1rem 0.75rem;
+  border-radius: 12px;
+  border: 2px solid #e2e8f0;
+  background: #f8fafc;
+  cursor: pointer;
+  transition: all 0.18s;
+  text-align: center;
+}
+
+.lp-role-btn:hover {
+  border-color: #94a3b8;
+  background: #f1f5f9;
+}
+
+.lp-role-btn.active {
+  border-color: #818cf8;
+  background: #eef2ff;
+}
+
+.lp-role-icon {
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+.lp-role-label {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.lp-role-desc {
+  font-size: 0.75rem;
+  color: #64748b;
+}
+
+/* ── Form ── */
+.lp-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.lp-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.lp-field label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #475569;
+}
+
+.lp-field input {
+  padding: 0.65rem 0.9rem;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 10px;
+  font-size: 0.925rem;
+  color: #1e293b;
+  background: #fff;
+  outline: none;
+  transition: border-color 0.15s;
+  font-family: inherit;
+}
+
+.lp-field input:focus {
+  border-color: #818cf8;
+}
+
+/* ── Error ── */
+.lp-error {
+  font-size: 0.85rem;
+  color: #dc2626;
+  background: #fee2e2;
+  border-radius: 8px;
+  padding: 0.5rem 0.85rem;
+  margin: 0;
+}
+
+/* ── Submit button ── */
+.lp-submit {
+  padding: 0.7rem;
+  border-radius: 10px;
+  border: none;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.15s, transform 0.1s;
+  margin-top: 0.25rem;
+  color: #fff;
+}
+
+.lp-submit.worker {
+  background: linear-gradient(135deg, #818cf8, #6366f1);
+}
+
+.lp-submit.employee {
+  background: linear-gradient(135deg, #34d399, #10b981);
+  color: #064e3b;
+}
+
+.lp-submit:hover:not(:disabled) {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.lp-submit:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+/* ── Demo hint ── */
+/* ── Sign up link ── */
+.lp-signup-link {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #64748b;
+  margin: 1.25rem 0 0;
+}
+
+.lp-link-btn {
+  background: none;
+  border: none;
+  color: #818cf8;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.lp-link-btn:hover {
+  color: #6366f1;
+}
+
+.lp-hint {
+  margin-top: 1.75rem;
+  padding: 1rem;
+  background: #f8fafc;
+  border-radius: 10px;
+  border: 1px dashed #cbd5e1;
+}
+
+.lp-hint p {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 0 0 0.5rem;
+}
+
+.lp-hint code {
+  display: block;
+  font-size: 0.8rem;
+  color: #475569;
+  line-height: 1.8;
+  font-family: 'Courier New', monospace;
+}
